@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 100vh;
+    background-color: black;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+    .nav li {
+        margin-right: 10px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+    .user-actions a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+.hero-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.4);
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    z-index: 1; /* Add this line */
+}
+
+.main-heading {
+    font-family: 'Anton', sans-serif;
+    background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: brown;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: white;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.content p {
+    padding: 0 125px;
+
+}
+
+
+/*Middle Content */
+
+.parallax-container {
+    background-image: url("/images/background/bg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+   
+    padding-top: 150px;
+    padding-bottom: 50px;
+    
+}
+
+.card-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+}
+
+    .card-section.in-viewport {
+        visibility: visible;
+    }
+/* Blog Cards */
+.blog-card {
+    margin: 50px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid yellow;
+    border-top: 2px solid yellow;
+}
+
+.description {
+    flex: 1;
+    padding: 10px;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    .images .image-1,
+    .images .image-2 {
+        width: 50%;
+        margin-left: 25px;
+    }
+
+    .images img {
+        width: 300px;
+        display: block;
+    }
+
+.description h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2vw;
+    background-image: linear-gradient(to right, yellow, yellow, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.read-more {
+    position: relative;
+    bottom: -1em;
+    text-align: right;
+}
+
+    .read-more a {
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
